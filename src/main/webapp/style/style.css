@@ -24,8 +24,9 @@ header {
     top: 0;
     left: 0;
 }
+
 footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
     left:0;
     height: 200px;
