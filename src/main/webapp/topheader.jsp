@@ -15,6 +15,6 @@
     </head>
     <body>
         <header>
-            
-            
+            <button classe="buttonHeader" id="loginButton">Login</button>
+            <button classe="buttonHeader" id="RegistratiButton">Registrati</button>
         </header>
