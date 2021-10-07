@@ -10,11 +10,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Together</title>
-        
+
         <link href="style/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header>
-            <button classe="buttonHeader" id="loginButton">Login</button>
-            <button classe="buttonHeader" id="RegistratiButton">Registrati</button>
+            <div class="loginContainer">
+                <button class="buttonHeader" id="loginButton">Login</button>
+                <button class="buttonHeader" id="RegistratiButton">Registrati</button>
+            </div>
+            
         </header>
