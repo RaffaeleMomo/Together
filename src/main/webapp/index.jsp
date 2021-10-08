@@ -3,7 +3,7 @@
 <jsp:include page="topheader.jsp"></jsp:include>
 
     <div class="container">
-        <h1>Hello World!!!</h1>
+        
     </div>
 
 <jsp:include page="footer.jsp"></jsp:include>

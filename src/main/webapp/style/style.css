@@ -7,6 +7,9 @@ and open the template in the editor.
     Created on : 6 ott 2021, 22:25:14
     Author     : raffa
 */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 html,body  {
     margin: 0;
     width: 100%;
@@ -25,25 +28,25 @@ header {
     width: 100%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    height: 50px;
-    position: fixed;
+    height: 100px;
+    position: absolute;
     background-color: rgb(81,38,72);
     top: 0;
     left: 0;
 }
 
-.loginContainer  {
+header .loginContainer  {
     position: absolute;
     right: 30px;
+    top: 30px;
 }
 
-.loginContainer .buttonHeader{
-    padding: 7px;
+header .loginContainer .buttonHeader{
+    height: 36px;
     padding-right: 20px;
     padding-left: 20px;
     border-radius: 10px;
     margin-left: 15px;
-    margin-top: 10px;
     background-color: rgb(116,73,107);
     border-style: unset;
     color: white;
@@ -51,6 +54,125 @@ header {
     cursor: pointer;
 }
 
+/*--------------------------Menu----------------------------*/
+#nav-icon1{
+  width: 35px;
+  height: 45px;
+  position: absolute;
+  left: 30px;
+  margin: 20px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span{
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 12px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 25px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+/*---------------------Search Bar-----------------------*/
+
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    
+}
+
+.searchTerm {
+    
+    width: 100%;
+    border: 3px solid rgb(116,73,107);
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus{
+    color: #00B4CC;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid rgb(116,73,107);
+    background-image: url(.././images/lensSearch.png);
+    background-size: 25px 25px;
+    background-color: rgb(116,73,107);
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 40%
+}
 /*------------------------Footer----------------------- */
 footer{
     position: fixed;
